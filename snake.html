@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <div class="layout">
+        <section class="game-card" aria-label="Snake game">
+          <header class="game-header">
+            <div>
+              <p class="eyebrow">Classic Snake</p>
+              <h1>Snake</h1>
+            </div>
+            <div class="scoreboard" aria-live="polite">
+              <span>Score</span>
+              <strong id="score">0</strong>
+            </div>
+          </header>
+
+          <p class="status" id="status">Use arrow keys or WASD to start.</p>
+          <p class="status error-status" id="errorStatus" hidden></p>
+
+          <div
+            class="board"
+            id="board"
+            role="grid"
+            aria-label="Snake board"
+            tabindex="0"
+          ></div>
+
+          <div class="actions">
+            <a class="menu-back-link" href="./index.html">Meny</a>
+            <button id="startButton" type="button">Start</button>
+            <button id="restartButton" type="button">Restart</button>
+          </div>
+
+          <section class="controls" aria-label="Touch controls">
+            <button class="control up" data-direction="up" type="button" aria-label="Move up">
+              Up
+            </button>
+            <button class="control left" data-direction="left" type="button" aria-label="Move left">
+              Left
+            </button>
+            <button class="control down" data-direction="down" type="button" aria-label="Move down">
+              Down
+            </button>
+            <button class="control right" data-direction="right" type="button" aria-label="Move right">
+              Right
+            </button>
+          </section>
+
+          <p class="hint">Walls wrap around. Restart anytime.</p>
+        </section>
+
+        <aside class="scores-card" aria-label="Best rounds">
+          <p class="eyebrow">Best Rounds</p>
+          <h2>Top 3</h2>
+          <ol class="scores-list" id="highscoresList">
+            <li>No rounds yet</li>
+            <li>No rounds yet</li>
+            <li>No rounds yet</li>
+          </ol>
+        </aside>
+      </div>
+    </main>
+
+    <script defer src="./snake.js"></script>
+  </body>
+</html>
