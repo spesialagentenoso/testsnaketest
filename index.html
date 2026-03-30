@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spillmeny</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="menu-screen" aria-label="Spillmeny">
+        <div class="menu-card">
+          <p class="eyebrow">Spillarkade</p>
+          <h1>Velg ditt neste spill</h1>
+          <p class="menu-copy">
+            Snake er klart til spilling. To ekstra prosjekter skjuler seg fortsatt
+            bak låste filer og hemmelige kodenavn.
+          </p>
+
+          <div class="menu-grid">
+            <a class="menu-tile menu-tile-link" href="./snake.html">
+              <span class="menu-tile-topline">Tilgjengelig nå</span>
+              <span class="menu-tile-label">Snake</span>
+              <span class="menu-tile-copy">Klikk for å åpne spillet</span>
+            </a>
+
+            <article class="menu-tile locked" aria-label="Låst spill med hemmelig navn">
+              <span class="menu-lock">Låst</span>
+              <span class="menu-tile-topline">Prosjekt 02</span>
+              <span class="menu-tile-label">Project Midnight</span>
+              <span class="menu-tile-copy">
+                Kryptert spillfil oppdaget. Mer informasjon kommer senere.
+              </span>
+            </article>
+
+            <article class="menu-tile locked" aria-label="Låst spill med hemmelig navn">
+              <span class="menu-lock">Låst</span>
+              <span class="menu-tile-topline">Prosjekt 03</span>
+              <span class="menu-tile-label">Operation Ember</span>
+              <span class="menu-tile-copy">
+                Navnet er registrert, men innholdet holdes fortsatt hemmelig.
+              </span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
